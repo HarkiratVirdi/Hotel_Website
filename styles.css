@@ -1,0 +1,290 @@
+/*
+NAME: HARKIRAT SINGH VIRDI
+SECTION: WEB222 NEE
+STUDENT ID: 133810192
+DATE: 20 NOVEMBER,2020
+EMAIL:HSVIRDI7@MYSENECA.CA
+*/
+
+:root{
+    --primary-color: rgb(197, 147, 106);
+    --secondary-color:rgb(209, 160, 120);
+    --black-color: rgb(19, 19, 19);
+    --white-color: #fff;
+    --cta-color: rgb(15, 34, 53);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    text-rendering: optimizeSpeed;
+}
+
+body{
+    background-color: var(--white-color);
+    font-size: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    margin: auto;
+    overflow: hidden;
+    max-width: 80%;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.6rem;
+    padding: 3rem 2rem;
+}
+
+
+ul{
+    list-style: none;
+}
+
+p{
+    line-height: 3rem;
+}
+
+header{
+    background-color: var(--primary-color);
+    height: auto;
+}
+
+nav{
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+    color: var(--white-color);
+    align-self: center;
+}
+
+
+nav .links{
+    display: flex;
+    height: inherit;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.link a:hover{
+    background-color: var(--secondary-color);
+    color: var(--black-color);
+}
+
+.hero{
+    position: relative;
+    top: 0;
+}
+
+.hero_image{
+    height: 60rem;
+    width: 100%;
+    background: url("./images-FSD/showcase.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero_text{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    color: var(--white-color);
+    transform: translate(-50%, -50%);
+}
+
+.hero_text h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.hero_text h1 span{
+    color: var(--primary-color);
+}
+
+.cta-button{
+    padding: 1rem 2rem;
+    color: var(--white-color);
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    background-color: var(--cta-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+/* 
+===============================History================================ */
+.history{
+    display: flex;
+    width: 100%;
+    color: var(--white-color);
+    background-color: var(--black-color);
+    height: 30rem;
+    justify-content: center;
+}
+
+.history--1{
+flex: 1;
+}
+
+.history--1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.history--2{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    height: 40%;
+    justify-content:space-around;
+    margin-top: 4rem;
+}
+
+
+.features{
+    height: 20rem;
+}
+
+.row{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+i{
+    font-size: 5rem;
+    
+}
+
+.col{
+    background-color: var(--primary-color);
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: column;
+    text-align: center;
+    flex: 1;
+    height: 100%;
+    color: var(--black-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.col-text{
+    margin-top: 2rem;
+}
+
+.col-2{
+    background: var(--white-color);
+}
+
+
+footer{
+    background: var(--black-color);
+    padding: 2rem;
+    text-align: center;
+    color: var(--white-color);
+}
+
+
+.active-link{
+    background: var(--secondary-color);
+    color: var(--black-color);
+}
+
+.about{
+    display: flex;
+     height: 28rem;
+     margin-top: 3rem;
+    justify-content: space-around;
+}
+
+.about-text{
+    flex: 2;
+    height: 100%;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about-text h1{
+    font-size: 3rem;
+}
+
+.about-text h1 span{
+    color: var(--primary-color);
+}
+
+.about-image{
+    flex: 1;
+}
+
+.about-image img{
+    border-radius: 100%;
+    width: 35rem;
+}
+
+.review{
+    position: relative;
+    height: 60rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.review-image{
+    background: url("./images-FSD/test-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+}
+
+.review-text{
+      display: flex; 
+      flex-direction: column;     
+      justify-content: space-around;
+      height: 65%;
+      width: 80%;
+      text-align: center;
+    color: var(--white-color);
+    position: absolute;
+
+}
+
+.review img{
+    height: 10rem;
+    margin-right: 1rem;
+    width: 10rem;
+    border-radius: 100rem;
+}
+
+.review_customer{
+    display: flex;
+    background-color: var(--primary-color);
+    padding: 2rem;
+    align-items: center;
+}
